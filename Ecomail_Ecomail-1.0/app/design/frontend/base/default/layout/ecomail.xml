@@ -1,0 +1,26 @@
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <action method="addJs">
+                <js>Ecomail/jquery/jquery.js</js>
+            </action>
+            <action method="addJs">
+                <script>Ecomail/jquery/noconflict.js</script>
+            </action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/Ecomail/front.js</name>
+            </action>
+        </reference>
+        <reference name="footer">
+            <action method="unsetData">
+                <key>cache_lifetime</key>
+            </action>
+            <action method="unsetData">
+                <key>cache_tags</key>
+            </action>
+            <block type="core/template" template="Ecomail/footer.phtml">
+            </block>
+        </reference>
+    </default>
+</layout>

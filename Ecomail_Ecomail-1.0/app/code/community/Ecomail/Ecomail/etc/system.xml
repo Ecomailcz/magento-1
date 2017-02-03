@@ -1,0 +1,58 @@
+<config>
+    <tabs>
+        <ecomail_config translate="label" module="ecomail">
+            <label>Ecomail</label>
+            <sort_order>9999</sort_order>
+        </ecomail_config>
+    </tabs>
+    <sections>
+        <ecomail_options translate="label" module="ecomail">
+            <label>Konfigurace</label>
+            <tab>ecomail_config</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <properties translate="label">
+                    <label>Nastavení</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <api_key>
+                            <label>Vložte Váš API klíč</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </api_key>
+                        <list_id>
+                            <label>Vyberte list:</label>
+                            <comment>Vyberte list do kterého budou zapsáni noví zákazníci</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ecomail/optionsListId</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </list_id>
+                        <app_id>
+                            <label>Vložte Vaše appId</label>
+                            <comment>Tento údaj slouží pro aktivaci funkce Trackovací kód</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </app_id>
+                    </fields>
+                </properties>
+            </groups>
+        </ecomail_options>
+    </sections>
+</config>

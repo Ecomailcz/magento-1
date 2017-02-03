@@ -1,0 +1,38 @@
+<?php
+
+    $html = <<<HTML
+<script type="text/javascript">            
+    EcomailBackOffice.init({1});
+</script>
+HTML;
+
+    $html = strtr(
+            $html,
+            array(
+                    '{1}' => json_encode(
+                            array(
+                                    'formFieldAPIKey'      => 'ecomail_options_properties_api_key',
+                                    'formFieldList'        => 'ecomail_options_properties_list_id',
+                                    'formFieldRowSelector' => 'tr',
+                                    'ajaxUrl'              => Mage::helper( 'adminhtml' )
+                                                                  ->getUrl( 'adminhtml/ecomail_ajax/index' ),
+                                    'templates'            => array(
+                                            'connect' => <<<HTML
+<tr>
+  <td class="label">
+  </td>
+  <td class="value">
+    <input type="submit" value="Připojit" id="{BUTTON_CONNECT}" class="btn">
+  </td>
+  <td class="scope-label"></td>
+  <td class=""></td>
+</tr>
+HTML
+
+                                    )
+                            )
+                    )
+            )
+    );
+
+    echo $html;

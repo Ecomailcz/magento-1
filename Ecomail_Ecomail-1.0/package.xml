@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Ecomail_Ecomail</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>Commercial</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Ecomail_Ecomail</summary>
+    <description>Ecomail_Ecomail</description>
+    <notes>Ecomail_Ecomail</notes>
+    <authors><author><name>Jan Cinert</name><user>jancinert</user><email>jan.cinert@gmail.com</email></author></authors>
+    <date>2016-08-05</date>
+    <time>00:46:57</time>
+    <contents><target name="magecommunity"><dir name="Ecomail"><dir name="Ecomail"><dir name="Helper"><file name="Data.php" hash="7d64fb4f23ef3af834b05fcf796630e0"/></dir><dir name="Model"><file name="Observer.php" hash="e4f1ecb39d8dae49c369aa0995ac8515"/><file name="OptionsListId.php" hash="582df3ad0badc15efc4627fb18255887"/></dir><dir name="controllers"><dir name="Adminhtml"><dir name="Ecomail"><file name="AjaxController.php" hash="9bc4e653e1e004f36e92aeca75fb7326"/></dir></dir></dir><dir name="etc"><file name="config.xml" hash="fb230618f741147400490bc0b8bffd56"/><file name="system.xml" hash="c0e1054e5c5a20a82251acc5aae6f7a7"/></dir><dir name="lib"><file name="api.php" hash="ade6be5e0200ae09417c86bec3345a00"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Ecomail_Ecomail.xml" hash="febb29d5c7f160f7f80e55cb6be32f73"/></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="ecomail.xml" hash="fc664f340c91d4737ac33a2bfdef9a33"/></dir><dir name="template"><dir name="Ecomail"><file name="content.phtml" hash="c167c481491c87924d7770c289e60742"/></dir></dir></dir></dir></dir><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="ecomail.xml" hash="140f31eaa98cd9fef38c356f379db168"/></dir><dir name="template"><dir name="Ecomail"><file name="footer.phtml" hash="7238f84afb8ba284eaa3cacc0c8e8146"/></dir></dir></dir></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="js"><dir name="Ecomail"><file name="front.js" hash="9c08fc5b7d647cf5620448de8f7530ea"/></dir></dir></dir></dir></dir></target><target name="mageweb"><dir name="js"><dir name="Ecomail"><file name="back.js" hash="df97388c0052c872eb6a5728d5c2b35d"/><dir name="jquery"><file name="jquery.js" hash="db517b376a77363d28f2f796431724e7"/><file name="jquery.min.js" hash="841dc30647f93349b7d8ef61deebe411"/><file name="jquery.min.map" hash="6c3ccfc221d36777d383b6e04d0b8af9"/><file name="noconflict.js" hash="ecf1dfbfb08a4cd515e367033cff363e"/></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.0.0</min><max>8.0.0</max></php></required></dependencies>
+</package>

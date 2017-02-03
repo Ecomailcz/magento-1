@@ -1,0 +1,11 @@
+<config>
+    <modules>
+        <Ecomail_Ecomail>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Sales/>
+            </depends>
+        </Ecomail_Ecomail>
+    </modules>
+</config>
