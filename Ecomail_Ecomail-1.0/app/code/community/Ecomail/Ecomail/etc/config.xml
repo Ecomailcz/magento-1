@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Ecomail_Ecomail>
-            <version>1.0.0</version>
+            <version>1.0.1</version>
         </Ecomail_Ecomail>
     </modules>
     <global>
@@ -37,24 +37,6 @@
             </updates>
         </layout>
         <events>
-            <!--<controller_action_postdispatch_customer_account_createpost>
-                <observers>
-                    <ecomail_create_account>
-                        <class>ecomail/observer</class>
-                        <method>createAccount</method>
-                        <type>singleton</type>
-                    </ecomail_create_account>
-                </observers>
-            </controller_action_postdispatch_customer_account_createpost>
-            <checkout_submit_all_after>
-                <observers>
-                    <ecomail_checkout_create_account>
-                        <class>ecomail/observer</class>
-                        <method>createAccountCheckout</method>
-                        <type>singleton</type>
-                    </ecomail_checkout_create_account>
-                </observers>
-            </checkout_submit_all_after>-->
             <newsletter_subscriber_save_commit_after>
                 <observers>
                     <ecomail_model_observer>

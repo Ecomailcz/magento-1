@@ -57,6 +57,7 @@
                 $product     = $orderProduct->getProduct();
                 $categoryIds = $product->getCategoryIds();
 
+                $category = null;
                 if( count( $categoryIds ) ) {
                     $firstCategoryId = $categoryIds[0];
                     $category        = Mage::getModel( 'catalog/category' )
@@ -71,7 +72,7 @@
                 $arr[] = array(
                         'code'      => $orderProduct['sku'],
                         'title'     => $orderProduct['name'],
-                        'category'  => $category->getName(),
+                        'category'  => $category ? $category->getName() : null,
                         'price'     => $orderProduct['price_incl_tax'],
                         'amount'    => $orderProduct['qty_ordered'],
                         'timestamp' => strtotime( $orderProduct['created_at'] )
