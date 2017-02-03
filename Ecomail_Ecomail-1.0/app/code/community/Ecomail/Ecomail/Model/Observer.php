@@ -88,9 +88,9 @@
                             'amount'    => $order['grand_total'],
                             'tax'       => $order['tax_amount'],
                             'shipping'  => $order['shipping_incl_tax'],
-                            'city'      => $addressDelivery['city'],
+                            'city'      => $addressDelivery ? $addressDelivery['city'] : null,
                             'county'    => '',
-                            'country'   => $addressDelivery->getCountry(),
+                            'country'   => $addressDelivery ? $addressDelivery->getCountry() : null,
                             'timestamp' => strtotime( $order['created_at'] )
                     ),
                     'transaction_items' => $arr
